@@ -3,6 +3,7 @@ var nodemailer = require("nodemailer");
 var bodyParser = require('body-parser')
 var app=express();
 
+app.use(cors())
 require('dotenv').config()
 console.log(process.env) // remove this after you've confirmed it is working
 app.use(bodyParser.json())
