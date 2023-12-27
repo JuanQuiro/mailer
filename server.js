@@ -4,7 +4,13 @@ var bodyParser = require('body-parser')
 var cors = require('cors')
 var app=express();
 
-app.use(cors())
+var corsOptions = {
+    origin: 'https://facturacion-cedieslab.vercel.app',
+    optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+}
+
+
+app.use(cors(corsOptions))
 require('dotenv').config()
 console.log(process.env) // remove this after you've confirmed it is working
 app.use(bodyParser.json())
