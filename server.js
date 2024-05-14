@@ -5,8 +5,8 @@ var cors = require('cors')
 var app=express();
 
 var corsOptions = {
-  origin: ['https://facturacion-cedieslab.vercel.app', 'https://facturacion-f0du2hcpq-juanquiroz.vercel.app'],
-  optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+  origin: ['https://facturacion-cedieslab.vercel.app', 'https://facturacion-f0du2hcpq-juanquiroz.vercel.app','https://facturacion-gatillo-mu.vercel.app'],
+  optionsSuccessStatus: 200 // some 0legacy browsers (IE11, various SmartTVs) choke on 204
 };
 
 
